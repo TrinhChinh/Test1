@@ -18,3 +18,135 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 https://github.com/TrinhChinh/Test1.git
 
 https://trinhchinh.github.io/Test1/
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////
+
+PS D:\GitHub\Test1> echo "# Test1" >> README.md
+PS D:\GitHub\Test1> git init
+Reinitialized existing Git repository in D:/GitHub/Test1/.git/
+PS D:\GitHub\Test1> git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+PS D:\GitHub\Test1> git add .
+PS D:\GitHub\Test1> git commit -m "first commit"
+ create mode 100644 App.js
+ create mode 100644 index.html
+PS D:\GitHub\Test1> git branch -M main
+PS D:\GitHub\Test1> git remote add origin https://github.com/TrinhChinh/Test1.git
+fatal: remote origin already exists.
+PS D:\GitHub\Test1> git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+To https://github.com/TrinhChinh/Test1.git
+ * [new branch]      main -> main
+PS D:\GitHub\Test1> git add .
+PS D:\GitHub\Test1> git commit -m "2 commit"     
+[main dce6540] 2 commit
+ 1 file changed, 10 insertions(+)
+PS D:\GitHub\Test1> git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 399 bytes | 99.00 KiB/s, done.
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/TrinhChinh/Test1.git
+   c422e80..dce6540  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+PS D:\GitHub\Test1> git commit -m "3 commit"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+        modified:   index.html
+
+PS D:\GitHub\Test1> git add .
+PS D:\GitHub\Test1> git commit -m "3 commit"
+[main a9a7d79] 3 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS D:\GitHub\Test1> git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 308 bytes | 77.00 KiB/s, done.
+To https://github.com/TrinhChinh/Test1.git
+   dce6540..a9a7d79  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+PS D:\GitHub\Test1> git add .
+git: 'commint' is not a git command. See 'git --help'.
+
+The most similar command is
+PS D:\GitHub\Test1> git commit -m "4 commit"
+[main fbaa9e4] 4 commit
+ 2 files changed, 21 insertions(+), 1 deletion(-)
+ create mode 100644 test1.txt
+PS D:\GitHub\Test1> git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 711 bytes | 177.00 KiB/s, done.
+To https://github.com/TrinhChinh/Test1.git
+   a9a7d79..fbaa9e4  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+PS D:\GitHub\Test1> git add .
+PS D:\GitHub\Test1> git commit -m "5 commit"
+[main 0d332be] 5 commit
+ 6 files changed, 40 insertions(+), 2 deletions(-)
+ create mode 100644 avatar.JPG
+ create mode 100644 avatar.PNG
+ create mode 100644 pic1.jpg
+ create mode 100644 style.css
+PS D:\GitHub\Test1> git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+To https://github.com/TrinhChinh/Test1.git
+   fbaa9e4..0d332be  main -> main
+PS D:\GitHub\Test1> git add .
+PS D:\GitHub\Test1> git commit -m "6 commit"
+[main 5265e58] 6 commit
+ 2 files changed, 32 insertions(+), 1 deletion(-)
+PS D:\GitHub\Test1> git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 876 bytes | 219.00 KiB/s, done.
+To https://github.com/TrinhChinh/Test1.git
+   0d332be..5265e58  main -> main
+PS D:\GitHub\Test1> git add .
+PS D:\GitHub\Test1> git commit -m "login box"
+[main 541c343] login box
+ 1 file changed, 42 insertions(+)
+PS D:\GitHub\Test1> git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 569 bytes | 284.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/TrinhChinh/Test1.git
+   5265e58..541c343  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+PS D:\GitHub\Test1>
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
